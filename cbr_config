@@ -1,0 +1,43 @@
+Host CBR2
+        Hostname 10.195.192.46
+        Port 2222
+        User maglev
+        ServerAliveInterval 10
+        UserKnownHostsFile=/dev/null
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host CBR3
+        Hostname 10.195.192.225
+        Port 2222
+        User maglev
+        ServerAliveInterval 10
+        UserKnownHostsFile=/dev/null
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host CBR4
+        Hostname 10.195.192.228
+	Port 2222
+        User maglev
+        ServerAliveInterval 10
+        UserKnownHostsFile=/dev/null
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host CBR5
+        Hostname 10.195.187.249
+	Port 2222
+        User maglev
+        ServerAliveInterval 10
+        UserKnownHostsFile=/dev/null
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host CBR-RCA-ADS
+        Hostname 10.195.189.95
+        User admin
+        ServerAliveInterval 15
+        ServerAliveCountMax 5
+        StrictHostKeyChecking no
+        TCPKeepAlive yes

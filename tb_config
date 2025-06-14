@@ -1,0 +1,46 @@
+Host v6Cluster
+        Hostname 2001:420:290:2009:4e::11
+        Port 2222
+        User maglev
+        ServerAliveInterval 10
+        TCPKeepAlive yes
+
+Host cluster
+        Hostname 10.195.192.167
+        Port 2222
+        User maglev
+        ServerAliveInterval 10
+
+Host cluster2
+        Hostname 10.195.192.28
+        Port 2222
+        User maglev
+        ServerAliveInterval 10
+
+Host VM
+        Hostname 10.29.34.199
+        User pravnaga
+
+Host ADS
+        Hostname pravnaga-sjc
+        User pravnaga
+        ServerAliveInterval 15
+        ServerAliveCountMax 5
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host 1C
+        Hostname 172.23.210.143
+        User dnac
+        ServerAliveInterval 15
+        ServerAliveCountMax 5
+        StrictHostKeyChecking no
+        TCPKeepAlive yes
+
+Host 1B
+        Hostname 172.23.210.142
+        User dnac
+        ServerAliveInterval 15
+        ServerAliveCountMax 5
+        StrictHostKeyChecking no
+        TCPKeepAlive yes

@@ -1,0 +1,31 @@
+echomvnbld() {
+        pwd
+        echo 'mvn -Pbuild-converged,minus-models,-build-legacy -nsu -Dbuild-converged clean install -Dmaven.test.skip=true'
+        mvn -Pbuild-converged,minus-models,-build-legacy -nsu -Dbuild-converged clean install -Dmaven.test.skip=true
+}
+
+echomvnbldtsts() {
+        pwd
+        echo 'mvn -Pbuild-converged,minus-models,-build-legacy -nsu -Dbuild-converged clean install'
+        mvn -Pbuild-converged,minus-models,-build-legacy -nsu -Dbuild-converged clean install
+}
+
+echomvnlgcy() {
+        pwd
+        echo 'mvn clean install -DskipTests -P build-maglev -nsu'
+        mvn clean install -DskipTests -P build-maglev -nsu
+}
+
+echomvnlgcytsts() {
+        pwd
+        echo 'mvn clean install -P build-maglev -nsu'
+        mvn clean install -P build-maglev -nsu
+}
+
+alias mvnbuild="echomvnbld"
+alias mvnbuild_test="echomvnbldtsts"
+
+alias mvnbuild_legacy="echomvnlgcy"
+alias mvnbuild_legacy_test="echomvnlgcytsts"
+
+alias mvnbuild_DP='mvn clean install -f xmpxde.xml'
