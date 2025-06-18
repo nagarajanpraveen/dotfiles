@@ -12,14 +12,14 @@ echomvnbldtsts() {
 
 echomvnlgcy() {
         pwd
-        echo 'mvn clean install -DskipTests -P build-maglev -nsu'
-        mvn clean install -DskipTests -P build-maglev -nsu
+        echo 'mvn -s settings_legacy.xml clean install -DskipTests -P build-maglev -nsu'
+        mvn -s settings_legacy.xml clean install -DskipTests -P build-maglev -nsu
 }
 
 echomvnlgcytsts() {
         pwd
-        echo 'mvn clean install -P build-maglev -nsu'
-        mvn clean install -P build-maglev -nsu
+        echo 'mvn -s settings_legacy.xml clean install -P build-maglev -nsu'
+        mvn -s settings_legacy.xml clean install -P build-maglev -nsu
 }
 
 alias mvnbuild="echomvnbld"
